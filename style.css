@@ -58,16 +58,16 @@ button:focus {
 
 .hamburger {
     display: none;
-}
-
-.bar {
-    display: block;
-    width: 35px;
-    height: 3px;
-    margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #222222;
+}
+
+.hamburger img {
+    display: block;
+    width: 45px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    
 }
 
 .navmenu {
@@ -133,10 +133,15 @@ button:focus {
 }
 
 @media only screen and (max-width: 1030px) {
+    body {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    
     .navmenu {
         position: fixed;
         left: -100%;
-        top: 5rem;
+        top: 8.5rem;
         flex-direction: column;
         background-color: #fff;
         width: 100%;
@@ -191,6 +196,8 @@ button:focus {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
     }
+
+  
 
 }
 
