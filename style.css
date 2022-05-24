@@ -216,32 +216,4 @@ a {
 
 
 
-.hero-section-index {  
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .hero-img1 { 
-      grid-area: hero-img1;
-     }
-
-     .hero-img1 img {
-         max-width: 350px;
-     }
-  
-  .hero-text { 
-      grid-area: hero-text;
-      text-align: center;
-      margin-top: 90px;
- }
-  
-  .hero-img2 { 
-      grid-area: hero-img2;
- }
-
- .hero-img2 img {
-    max-width: 350px;
-}
-
 
