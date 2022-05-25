@@ -250,6 +250,13 @@ a {
   font-size: 90px;
 }
 
+.decoration {
+  width: 10vw;
+  display: block;
+  margin-top: -10vh;
+  margin-bottom: 10vh;
+}
+
 .hero-section-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -306,7 +313,7 @@ a {
 }
 
 .popular-styles {
-  height: 70vh;
+  height: 80vh;
   background-color: var(--background-color);
   margin: -100px;
   margin-top: 150px;
@@ -343,4 +350,35 @@ a {
   color: #3d7d7d;
   text-align: center;
   margin-bottom: -100px;
+}
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #3d7d7d;
+  height: 50vh;
+  border: 3px #3d7d7d solid;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 90vw;
+  /* border: 3px red solid; */
+}
+.image2 {
+  width: 40vw;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  /* border: 4px green solid; */
+}
+
+.image3 {
+  width: 40vw;
+  position: absolute;
+  top: 30px;
+  left: 40vw;
+  /* border: 4px blue solid; */
 }
