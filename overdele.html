@@ -18,18 +18,45 @@
 
 
       <ul class='navmenu'>
-        <li class="navitem-1">
-            <a class="navlink-1">SHOP <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="15" height="15"  preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="#307759" d="m7 10l5 5l5-5H7z"></path></svg></a>
-        </li>
+
+        <div class="navitem-1">
+            <div class="dropdown">
+              
+                    <div class="navlink-1">SHOP </div>
+                
+                
+                    <div class="option">
+                        <div onclick="('Kategorier')"><b>Kategorier</b></div>
+                        <img src="assets/swigly.png" width="270" height="20" alt="line">
+                        <div onclick="('Overdele')"><a href="overdele.html">Overdele</a></div>
+                        <div onclick="('Underdele')"><a href="underdele.html">Underdele</a></div>
+                        <div onclick="('Accessories')"><a href="accessories.html">Accessories</a></div>
+                        <div onclick="('Diverse')"><a href="diverse.html">Diverse</a></div>
+                        
+                    </div>
+                
+                
+                </div>
+            </div>
+
+            <script>
+               
+               let dropdown = document.querySelector('.dropdown');
+               dropdown.onclick = function(){
+                   dropdown.classList.toggle('active');
+               }
+            </script>
+
+       
 
         <li class="navitem">
           
-            <a class="navlink" href="#">OM OS</a>
+            <a class="navlink" href="omos.html">OM OS</a>
    
         </li>
         <li class="navitem">
        
-            <a class="navlink" href="#">KONTAKT</a>
+            <a class="navlink" href="kontakt.html">KONTAKT</a>
   
         </li>
         <li class="navitem">
@@ -37,6 +64,8 @@
             <a class="navlink" href="#">TRYKKERI</a>
   
         </li>
+
+ 
 
 
         <div class="icons">
@@ -67,13 +96,13 @@
 
         <h2>Forside</h2>
         <img src="assets/arrow.png" alt="arrow">
-        <h3>Underdele</h3>
+        <h3>Overdele</h3>
 
         
       </div>
 
       <div class="product-title">
-          <h1>Underdele</h1>
+          <h1>Overdele</h1>
           <img src="assets/smile.png" alt="smile">
       </div>
 
