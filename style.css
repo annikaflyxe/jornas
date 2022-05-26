@@ -393,6 +393,14 @@ cursor: pointer
     
 }
 
+.product body:hover {
+   
+    background-color: yellow;
+  
+   
+    
+}
+
 .list-container .product-img {
     width: 250px;
     height: 300px;
@@ -553,6 +561,60 @@ animation-duration: 1s;
 .ordre-oversigt h1 {
     color: var(--text);
 }
+
+.checkout-section {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 20px;
+    background-color: yellow;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "products-checkout buying-details";
+  }
+  
+  .products-checkout { 
+      grid-area: products-checkout;
+ }
+
+ .buying-details h1 {
+     color: var(--text);
+     font-size: 23px;
+ }
+  
+  .buying-details { 
+      grid-area: buying-details;
+ }
+
+ .box-section {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    background-color: white;
+    border: 1px solid black;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "section-1-box section-2-box";
+  }
+  
+  .section-1-box { 
+      grid-area: section-1-box;
+    display: flex;
+ }
+
+      .section-1-box img {
+          max-width: 70px;
+      }
+  
+  .section-2-box { 
+      grid-area: section-2-box; }
+
+      
+  
+  
 
 
 
