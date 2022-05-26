@@ -354,17 +354,16 @@ a {
 
 .parent {
   position: relative;
-  top: 0;
-  left: 0;
   background-color: #3d7d7d;
-  height: 50vh;
-  border: 3px #3d7d7d solid;
+  height: 55vh;
+  width: 90vw;
 }
 .image1 {
   position: relative;
   top: 0;
   left: 0;
   width: 90vw;
+  margin-left: auto;
   /* border: 3px red solid; */
 }
 .image2 {
@@ -381,4 +380,86 @@ a {
   top: 30px;
   left: 40vw;
   /* border: 4px blue solid; */
+}
+
+/* .link-toj-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 3em;
+  padding-left: 1.8em;
+  padding-right: 1.8em;
+  border-radius: 80px;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 5px solid orange;
+  z-index: 1;
+} */
+
+/* .link-toj-section {
+  position: absolute;
+  font-size: 2rem;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  padding-left: 8rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-right: 8rem;
+  border-radius: 50%;
+  border: 5px solid orange;
+} */
+
+/* .link-toj-section:hover {
+  position: absolute;
+  font-size: 2rem;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: orange;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  padding-left: 8rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-right: 8rem;
+  border-radius: 50%;
+  border: 5px solid orange;
+} */
+
+.link-toj-section {
+  font-size: 2rem;
+  color: orange;
+  border: 5px solid orange;
+}
+
+.link-toj-section:hover {
+  font-size: 2rem;
+  border: 5px solid orange;
+  color: white;
+}
+
+.link-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  width: 80vw;
+  height: 20vh;
+  background-color: var(--background-color-accent);
+  position: inherit;
+  text-align: center;
 }
