@@ -166,7 +166,7 @@ border-top: 2px solid var(--background-color);
 border-right: 2px solid var(--background-color);
 transform: rotate(-45deg);
 transition: 0.5s;
-pointer-events: none;
+cursor: pointer
 }
 
 .dropdown.active::before {
