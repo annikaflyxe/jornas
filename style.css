@@ -27,6 +27,7 @@ li {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 p {
@@ -524,6 +525,33 @@ animation-duration: 1s;
     text-align: center;
     margin-bottom: 30px;
     margin-top: 30px;
+}
+
+/*------------Check-out------------*/
+
+.shop-videre {
+    display: flex;
+    margin-top: 40px;
+}
+
+.shop-videre img {
+    max-width: 50px;
+    transform: rotate(-180deg);
+
+}
+
+.shop-videre h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.ordre-oversigt {
+    margin-top: 20px;
+}
+
+.ordre-oversigt h1 {
+    color: var(--text);
 }
 
 
