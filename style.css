@@ -9,7 +9,8 @@
   --color-black: black;
   --color-transparent: transparent;
 
-  --font-family-heading: "Madela", serif;
+  --font-family-display: "Madela", serif;
+  --font-family-heading: "neue-haas-grotesk-display", sans-serif;
   --font-family-body: "neue-haas-grotesk-display", sans-serif;
 
   --font-weight-regular: 400;
@@ -18,10 +19,10 @@
   --heading-font-size-largest: 6rem;
   --heading-font-size-large: 3.75rem;
   --heading-font-size-medium: 2.8125rem;
-  --heading-font-size-small: 1.5625rem;
-  --heading-font-size-smallest: 1.125rem;
+  --heading-font-size-small: 2rem;
+  --heading-font-size-smallest: 1.8rem;
 
-  --heading-line-height: 1;
+  --heading-line-height: 1.3;
   --text-line-height: 1.5;
   --button-line-height: 1.2;
 
@@ -45,6 +46,7 @@
   --spacing-80: 8rem;
 
   --border-width-thick: 2px;
+  --border-width-thicker: 3px;
   --border-width-thin: 1px;
 
   --padding-10: 1rem;
@@ -72,38 +74,51 @@
   --heading-display-line-height: var(--heading-line-height);
   --heading-2-font-size: var(--heading-font-size-large);
   --heading-2-line-height: var(--heading-line-height);
-  --heading-3-font-size: var(--font-size-medium);
+
+  --heading-3-font-size: var(--heading-font-size-medium);
   --heading-3-line-height: var(--heading-line-height);
-  --heading-4-font-size: var(--font-size-small);
+
+  --heading-4-font-size: var(--heading-font-size-small);
   --heading-4-line-height: var(--heading-line-height);
-  --heading-5-font-size: var(--font-size-smallest);
+
+  --heading-5-font-size: var(--heading-font-size-smallest);
   --heading-5-font-size: var(--heading-line-height);
 
   /*//Component tokens text*/
 
-  --text-largest-font-size: var(--text-font-size-largest);
-  --text-large-font-size: var(--text-font-size-large);
-  --text-medium-font-size: var(--text-font-size-medium);
-  --text-small-font-size: var(--text-font-size-small);
+  --text-font-size-button: var(--text-font-size-largest);
+  --text-font-size-body: var(--text-font-size-large);
+  --text-font-size-body-small: var(--text-font-size-medium);
+  --text-font-size-smallest: var(--text-font-size-small);
 
   /*// Component tokens - buttons*/
   /*// CTA*/
   --CTA-button-background-color: var(--color-background-default);
   --CTA-button-background-color-hover: var(--color-transparent);
-  --CTA-button-size: var(--sizing-large);
 
   /*//Regular*/
   --button-background-color: var(--color-background-transparent);
   --button-background-color-hover: var(--color-background-default);
 
-  /*//Rules for both buttons*/
+  /*//Default*/
+  --button-default-background-color: var(--color-background-transparent);
+  --button-default-text-color: var(--color-text-default);
+  --button-default-border-color: var(--color-text-default);
+  --button-default-font-weight: var(--font-weight-bold);
+  --button-default-background-color-hover: var(--color-black);
+  --button-default-text-color-hover: var(--color-beige);
+
+  /*//Spacing and border for all buttons*/
   --button-border-color: var(--color-accent-green);
   --padding-left-right-button: var(--padding-20);
   --padding-top-bottom-button: var(--padding-10);
+  --margin-top-bottom-button: var(--spacing-15);
   --border-width-button: var(--border-width-thick);
   --button-line-height: var(--button-line-height);
   --button-text-color: var(--color-text-heading);
+  --button-border-width-focus: var(--border-thicker);
 
+  /*//Buttons states*/
   --button-transition: var(--transition);
 }
 
@@ -111,7 +126,7 @@
 
 .CTA-button {
   background-color: var(--CTA-button-background-color);
-  font-size: var(--text-largest-font-size);
+  font-size: var(--text-font-size-button);
   padding-left: var(--padding-left-right-button);
   padding-right: var(--padding-left-right-button);
   padding-top: var(--padding-top-bottom-button);
@@ -122,51 +137,98 @@
   margin: var(--gutter);
 }
 
-.CTA-button:hover {
-  background-color: var(--CTA-button-background-color-hover);
-}
-
-.Button {
+.button {
   background-color: var(--button-background-color);
-  font-size: var(--text-largest-font-size);
+  font-size: var(--text-font-size-button);
+  color: var(--button-text-color);
   padding-left: var(--padding-left-right-button);
   padding-right: var(--padding-left-right-button);
   padding-top: var(--padding-top-bottom-button);
   padding-bottom: var(--padding-top-bottom-button);
-  color: var(--color-text-heading);
   border: var(--border-width-button) solid var(--button-border-color);
   transition: var(--button-transition);
+  margin-top: var(--margin-top-bottom-button);
 }
 
-.Button:hover {
+.default-button {
+  background-color: var(--button-default-background-color);
+  color: var(--button-default-text-color);
+  font-size: var(--text-font-size-button);
+  padding-left: var(--padding-left-right-button);
+  padding-right: var(--padding-left-right-button);
+  padding-top: var(--padding-top-bottom-button);
+  padding-bottom: var(--padding-top-bottom-button);
+  border: var(--border-width-button) solid var(--button-default-border-color);
+  transition: var(--button-transition);
+  margin-top: var(--margin-top-bottom-button);
+  font-weight: var(--button-default-font-weight);
+}
+
+/*Hover state*/
+
+.CTA-button:hover {
+  background-color: var(--CTA-button-background-color-hover);
+}
+
+.button:hover {
   background-color: var(--button-background-color-hover);
+}
+
+.default-button:hover {
+  background-color: var(--button-default-background-color-hover);
+  color: var(--button-default-text-color-hover);
+}
+
+/*Focus state*/
+
+.CTA-button:focus {
+  border: dashed 4px var(--button-border-color);
+}
+
+.button:focus {
+  border: dashed 4px var(--button-border-color);
+}
+
+.default-button:focus {
+  border: dashed 4px var(--button-default-border-color);
 }
 
 h1 {
   color: var(--color-text-heading);
   font-size: var(--heading-display-font-size);
-  font-family: var(--font-family-heading);
+  line-height: var(--heading-1-line-height);
+  font-family: var(--font-family-display);
 }
 
 h2 {
   color: var(--color-text-heading);
-  font-size: var(--heading-font-size-large);
+  font-size: var(--heading-2-font-size);
+  line-height: var(--heading-2-line-height);
+  font-family: var(--font-family-heading);
 }
+
 h3 {
   color: var(--color-text-heading);
-  font-size: var(--heading-font-size-medium);
+  font-size: var(--heading-3-font-size);
+  line-height: var(--heading-3-line-height);
+  font-family: var(--font-family-heading);
 }
 h4 {
   color: var(--color-text-heading);
-  font-size: var(--heading-font-size-small);
+  font-size: var(--heading-4-font-size);
+  line-height: var(--heading-4-line-height);
+  font-family: var(--font-family-heading);
 }
 h5 {
   color: var(--color-text-heading);
-  font-size: var(--heading-font-size-smallest);
+  font-size: var(--heading-5-font-size);
+  font-family: var(--font-family-heading);
+  line-height: var(--heading-5-line-height);
 }
 
 p {
   font-family: var(--font-family-body);
+  color: var(--color-text-default);
 }
 
 /*//GENERAL DESIGN SYSTEM RULES ENDS*/
