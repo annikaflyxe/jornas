@@ -356,8 +356,6 @@ p {
   font-size: var(--paragraph-text-font-size);
   line-height: var(--paragraph-text-line-height);
   letter-spacing: var(--paragraph-letter-spacing);
-  width: var(--paragraph-width);
-  margin-bottom: var(--paragraph-margin);
 }
 
 a {
