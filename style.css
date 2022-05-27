@@ -2,6 +2,8 @@
 
 :root {
   /* // Global Tokens*/
+
+  /* colors*/
   --color-beige: #f9f1e4;
   --color-orange: #ffab07;
   --color-green: #3d7d7d;
@@ -9,12 +11,17 @@
   --color-black: black;
   --color-transparent: transparent;
 
+  /*fonts*/
+
   --font-family-display: "Madela", serif;
   --font-family-heading: "neue-haas-grotesk-display", sans-serif;
   --font-family-body: "neue-haas-grotesk-display", sans-serif;
 
+  /*font weight*/
   --font-weight-regular: 400;
   --font-weight-bold: 600;
+
+  /*heading size desktop view*/
 
   --heading-font-size-largest: 6rem;
   --heading-font-size-large: 3rem;
@@ -22,23 +29,42 @@
   --heading-font-size-small: 2rem;
   --heading-font-size-smallest: 1.8rem;
 
+  /*heading size mobile view*/
+
+  --heading-mobile-font-size-largest: 3.75rem;
+  --heading-mobile-font-size-large: 2.188rem;
+  --heading-mobile-font-size-medium: 1.875rem;
+  --heading-mobile-font-size-small: 1.563rem;
+  --heading-mobile-font-size-smallest: 1.375rem;
+
+  /*line height*/
+
   --heading-line-height: 1.3;
   --text-line-height: 1.5;
   --button-line-height: 1.2;
+
+  /*text font size*/
 
   --text-font-size-largest: 1.25rem;
   --text-font-size-large: 1.125rem;
   --text-font-size-default: 1rem;
   --text-font-size-small: 0.875rem;
 
+  /*letter spacing*/
+
   --letter-spacing-small: 0.03rem;
   --letter-spacing-medium: 0.05rem;
 
-  --width-smallest: 5rem;
-  --width-small: 10rem;
-  --width-medium: 15rem;
-  --width-large: 20rem;
+  /*width*/
+
   --width-largest: 35rem;
+  --width-large: 20rem;
+  --width-medium: 17rem;
+  --width-small: 13rem;
+  --width-smaller: 11rem;
+  --width-smallest: 8rem;
+
+  /*spacing and padding*/
 
   --spacing-10: 0.5rem;
   --spacing-15: 1rem;
@@ -47,24 +73,31 @@
   --spacing-40: 4rem;
   --spacing-80: 8rem;
 
-  --border-width-thick: 2px;
-  --border-width-thicker: 3px;
-  --border-width-thin: 1px;
-
   --padding-10: 1rem;
   --padding-20: 2rem;
   --padding-30: 3rem;
   --padding-40: 4rem;
   --padding-50: 5rem;
 
+  /*border width*/
+
+  --border-width-thick: 2px;
+  --border-width-thicker: 3px;
+  --border-width-thin: 1px;
+
   --timing-function-default: cubic-bezier(0.4, 0, 0.2, 1);
   --duration-medium: 300ms;
   --transition: all 0.2s ease-in-out;
 
-  /*// Contextual tokens*/
+  /*grids*/
+  --one-column-grid: 1fr;
+  --two-column-grid: 1fr 1fr;
+  --four-column-grid: 1fr 1fr 1fr 1fr;
+
+  /*// Contextual tokens desktop*/
   --color-text-default: var(--color-black);
-  --color-text-display: var(--color-brown);
-  --color-text-heading: var(--color-green);
+  --color-text-display: var(--color-green);
+  --color-text-heading: var(--color-brown);
 
   --color-background-default: var(--color-beige);
   --color-background-accent: var(--color-orange);
@@ -73,7 +106,7 @@
 
   --gutter: var(--spacing-15);
 
-  /*//Component tokens headings*/
+  /*//Component tokens headings desktop*/
   --heading-display-font-size: var(--heading-font-size-largest);
   --heading-display-line-height: var(--heading-line-height);
   --heading-display-margin-bottom: var(--spacing-15);
@@ -94,23 +127,46 @@
   --heading-5-font-size: var(--heading-line-height);
   --heading-5-margin-bottom: var(--spacing-15);
 
-  /*//Component tokens text*/
+  /*//Components tokens headings mobile*/
+  --heading-display-mobile-font-size: var(--heading-mobile-font-size-largest);
+  --heading-display-line-height: var(--heading-line-height);
+  --heading-display-margin-bottom-mobile: var(--spacing-10);
+
+  --heading-2-mobile-font-size: var(--heading-mobile-font-size-large);
+  --heading-2-line-height: var(--heading-line-height);
+  --heading-2-margin-bottom-mobile: var(--spacing-10);
+
+  --heading-3-mobile-font-size: var(--heading-mobile-font-size-medium);
+  --heading-3-line-height: var(--heading-line-height);
+  --heading-3-margin-bottom-mobile: var(--spacing-10);
+
+  --heading-4-mobile-font-size: var(--heading-mobile-font-size-small);
+  --heading-4-line-height: var(--heading-line-height);
+  --heading-4-margin-bottom-mobile: var(--spacing-10);
+
+  --heading-5-mobile-font-size: var(--heading-mobile-font-size-smallest);
+  --heading-5-font-size: var(--heading-line-height);
+  --heading-5-margin-bottom-mobile: var(--spacing-10);
+
+  --heading-width-mobile: var(--width-medium);
+
+  /*//Component tokens text desktop*/
 
   --text-font-size-button: var(--text-font-size-largest);
   --text-font-size-body: var(--text-font-size-large);
   --text-font-size-body-small: var(--text-font-size-medium);
   --text-font-size-smallest: var(--text-font-size-small);
 
-  /*// Component tokens - buttons*/
-  /*// CTA*/
+  /*// Component tokens - buttons desktop*/
+  /*// CTA desktop*/
   --CTA-button-background-color: var(--color-background-default);
   --CTA-button-background-color-hover: var(--color-transparent);
 
-  /*//Regular*/
+  /*//Regular desktop*/
   --button-background-color: var(--color-background-transparent);
   --button-background-color-hover: var(--color-background-default);
 
-  /*//Default*/
+  /*//Default desktop*/
   --button-default-background-color: var(--color-background-transparent);
   --button-default-text-color: var(--color-text-default);
   --button-default-border-color: var(--color-text-default);
@@ -118,7 +174,7 @@
   --button-default-background-color-hover: var(--color-black);
   --button-default-text-color-hover: var(--color-beige);
 
-  /*//Spacing and border for all buttons*/
+  /*//Rules for all buttons*/
   --button-border-color: var(--color-accent-green);
   --padding-left-right-button: var(--padding-20);
   --padding-top-bottom-button: var(--padding-10);
@@ -127,22 +183,36 @@
   --button-line-height: var(--button-line-height);
   --button-text-color: var(--color-green);
   --button-border-width-focus: var(--border-thicker);
+  --button-max-width-desktop: var(--width-small);
+
+  /*//Buttons mobile*/
+  --button-max-width-mobile: var(--width-smaller);
+  --button-mobile-font-size: var(--text-font-size-default);
 
   /*//Buttons states*/
   --button-transition: var(--transition);
 
-  /*//Links*/
+  /*//Links desktop*/
   --link-font-size: var(--text-font-size-default);
   --link-text-color: var(--color-black);
 
-  /*//Paragraph*/
+  /*//Paragraph desktop*/
   --paragraph-text-font-size: var(--font-size-body);
   --paragraph-text-line-height: var(--spacing-20);
   --paragraph-letter-spacing: var(--letter-spacing-small);
   --paragraph-width: var(--width-largest);
+  --paragraph-margin: var(--spacing-10);
 
-  /*Grids and margins (change name?)*/
+  /*//Paragraph mobile*/
+  --paragraph-mobile-text-font-size: var(--font-size-body);
+  --paragraph-mobile-text-line-height: var(--spacing-20);
+  --paragraph-mobile-letter-spacing: var(--letter-spacing-small);
+  --paragraph-mobile-width: var(--width-medium);
+
+  /*LAYOUT / GRIDS / MARGIN / PADDING (change name?)*/
   --body-padding-left-right: var(--padding-50);
+  --body-mobile-padding-left-right: var(--padding-20);
+  --grid-buttons-mobile: var(--one-column-grid);
 }
 
 /*//GENERAL DESIGN SYSTEM RULES*/
@@ -168,6 +238,8 @@ body {
   color: var(--button-text-color);
   border: var(--border-width-button) solid var(--button-border-color);
   transition: var(--button-transition);
+  margin-top: var(--margin-top-bottom-button);
+  max-width: var(--button-max-width-desktop);
 }
 
 .button {
@@ -180,6 +252,8 @@ body {
   padding-bottom: var(--padding-top-bottom-button);
   border: var(--border-width-button) solid var(--button-border-color);
   transition: var(--button-transition);
+  margin-top: var(--margin-top-bottom-button);
+  max-width: var(--button-max-width-desktop);
 }
 
 .default-button {
@@ -194,6 +268,7 @@ body {
   transition: var(--button-transition);
   margin-top: var(--margin-top-bottom-button);
   font-weight: var(--button-default-font-weight);
+  max-width: var(--button-max-width-desktop);
 }
 
 /*Hover state buttons*/
@@ -231,7 +306,7 @@ body {
 /*Headings and paragraphs*/
 
 h1 {
-  color: var(--color-text-heading);
+  color: var(--color-text-display);
   font-size: var(--heading-display-font-size);
   line-height: var(--heading-1-line-height);
   font-family: var(--font-family-display);
@@ -275,6 +350,7 @@ p {
   line-height: var(--paragraph-text-line-height);
   letter-spacing: var(--paragraph-letter-spacing);
   width: var(--paragraph-width);
+  margin-bottom: var(--paragraph-margin);
 }
 
 a {
@@ -314,7 +390,7 @@ a:hover {
 .color-headings {
   width: 10rem;
   height: 10rem;
-  background-color: var(--color-text-heading);
+  background-color: var(--color-text-display);
   border-radius: 100px;
   border: solid 2px var(--color-black);
 }
@@ -331,6 +407,72 @@ a:hover {
   background-color: var(--color-brown);
   border-radius: 100px;
   border: solid 2px var(--color-black);
+}
+
+@media only screen and (max-width: 420px) {
+  body {
+    padding-left: var(--body-mobile-padding-left-right);
+    padding-right: var(--body-mobile-padding-left-right);
+  }
+
+  h1 {
+    color: var(--color-text-display);
+    font-size: var(--heading-display-mobile-font-size);
+    margin-bottom: var(--heading-2-margin-bottom-mobile);
+    width: var(--heading-width-mobile);
+  }
+
+  h2 {
+    font-size: var(--heading-2-mobile-font-size);
+    margin-bottom: var(--heading-2-margin-bottom-mobile);
+    width: var(--heading-width-mobile);
+  }
+  h3 {
+    font-size: var(--heading-3-mobile-font-size);
+    margin-bottom: var(--heading-3-margin-bottom-mobile);
+    width: var(--heading-width-mobile);
+  }
+  h4 {
+    font-size: var(--heading-4-mobile-font-size);
+    margin-bottom: var(--heading-4-margin-bottom-mobile);
+    width: var(--heading-width-mobile);
+  }
+  h5 {
+    font-size: var(--heading-5-mobile-font-size);
+    margin-bottom: var(--heading-5-margin-bottom-mobile);
+    width: var(--heading-width-mobile);
+  }
+
+  p {
+    font-size: 1rem;
+    width: var(--paragraph-mobile-width);
+  }
+
+  .designsystem-colors {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .buttons-grid {
+    display: grid;
+    grid-template-columns: var(--grid-buttons-mobile);
+  }
+
+  .CTA-button {
+    max-width: var(--button-max-width-mobile);
+    font-size: var(--button-mobile-font-size);
+  }
+
+  .default-button {
+    max-width: var(--button-max-width-mobile);
+    font-size: var(--button-mobile-font-size);
+  }
+
+  .button {
+    max-width: var(--button-max-width-mobile);
+    font-size: var(--button-mobile-font-size);
+  }
 }
 
 /*//GENERAL DESIGN SYSTEM RULES ENDS*/
