@@ -399,13 +399,11 @@ cursor: pointer
     
 }
 
-.product body:hover {
-   
-    background-color: yellow;
-  
-   
+.list-container .product-img:hover{
+   border: 3px solid #ffab07;
     
 }
+
 
 .list-container .product-img {
     width: 250px;
@@ -453,6 +451,7 @@ cursor: pointer
     margin-right: 10px
 }
 
+
 .product-title {
    
    display: flex;
@@ -482,7 +481,8 @@ animation-duration: 1s;
    
 }
 
-.list-container .product:hover {
+
+.product:hover {
     width: 300px;
     height: 350px;
     padding-left: 25px;
@@ -492,9 +492,12 @@ animation-duration: 1s;
     animation-name: fadeup; 
     animation-duration: 1s; 
     cursor: pointer;
+    
    
     
 }
+
+
 
 
 @keyframes fadeup {
@@ -1045,48 +1048,190 @@ margin-right: 20px;
 .color-options {
     display: flex; 
     margin-bottom: 15px;
+    max-height: 27px;
+    
     
 }
+
+.color-options a {
+    text-decoration: none;
+}
+
 
 .color-options .navy-box {
     background-color: rgb(43, 51, 134);
-    padding-right: 12px;
+    padding-right: 15px;
     margin-right: 6px;
     color: rgb(43, 51, 134);
     border: 3px solid rgb(43, 51, 134); 
+    cursor: pointer;
     
 }
 
+.color-options .navy-box a {
+    color: rgb(43, 51, 134);
+    
+   
+    
+}
+
+.color-options .navy-box-navy {
+    background-color: rgb(43, 51, 134);
+    padding-right: 15px;
+    margin-right: 6px;
+    color: rgb(43, 51, 134);
+    border: 3px solid #ffab07; 
+    cursor: pointer;
+    
+}
+
+.color-options .navy-box-navy a {
+    color: rgb(43, 51, 134);
+    
+   
+    
+}
+
+.color-options .black-box-black {
+    background-color: rgb(0, 0, 0);
+    padding-right: 15px;
+    margin-right: 6px;
+     color: rgb(0, 0, 0);
+     border: 3px solid #ffab07; 
+     cursor: pointer;
+}
+
+.color-options .black-box-black a {
+    color: black;
+}
+
+
 .color-options .black-box {
     background-color: rgb(0, 0, 0);
-    padding-right: 12px;
+    padding-right: 15px;
     margin-right: 6px;
      color: rgb(0, 0, 0);
      border: 3px solid rgb(0, 0, 0); 
+     cursor: pointer;
+}
+
+.color-options .black-box a {
+    color: black;
+}
+
+.color-options .white-box-white {
+    background-color: rgb(255, 255, 255);
+    padding-right: 15px;
+    margin-right: 6px;
+     color: rgb(255, 255, 255);
+     border: 3px solid #ffab07; 
+     cursor: pointer;
+}
+.color-options .white-box-white a {
+    color: white;
 }
 
 .color-options .white-box {
     background-color: rgb(255, 255, 255);
-    padding-right: 12px;
+    padding-right: 15px;
     margin-right: 6px;
      color: rgb(255, 255, 255);
      border: 3px solid rgb(255, 255, 255); 
+     cursor: pointer;
+}
+.color-options .white-box a {
+    color: white;
 }
 .color-options .darkgrey-box {
     background-color: rgb(72, 72, 72);
-    padding-right: 12px;
+    padding-right: 15px;
     margin-right: 6px;
      color: rgb(72, 72, 72);
      border: 3px solid rgb(72, 72, 72); 
+     cursor: pointer;
+}
+.color-options .darkgrey-box a {
+    color: rgb(72, 72, 72);
+}
+
+.color-options .grey-box-black {
+    background-color: rgb(154, 154, 154);
+    padding-right: 15px;
+    margin-right: 6px;
+     color: rgb(154, 154, 154);
+     border: 3px solid rgb(154, 154, 154); 
+     cursor: pointer;
+}
+
+.color-options .grey-box-white a {
+    color: rgb(154, 154, 154);
+}
+
+.color-options .grey-box-white {
+    background-color: rgb(154, 154, 154);
+    padding-right: 15px;
+    margin-right: 6px;
+     color: rgb(154, 154, 154);
+     border: 3px solid rgb(154, 154, 154); 
+     cursor: pointer;
+}
+
+.color-options .grey-box-navy a {
+    color: rgb(154, 154, 154);
+}
+
+.color-options .grey-box-navy {
+    background-color: rgb(154, 154, 154);
+    padding-right: 15px;
+    margin-right: 6px;
+     color: rgb(154, 154, 154);
+     border: 3px solid rgb(154, 154, 154); 
+     cursor: pointer;
+}
+
+.color-options .grey-box-black a {
+    color: rgb(154, 154, 154);
 }
 
 .color-options .grey-box {
     background-color: rgb(154, 154, 154);
-    padding-right: 12px;
+    padding-right: 15px;
     margin-right: 6px;
      color: rgb(154, 154, 154);
-     border: 3px solid rgb(57, 90, 70); 
+     border: 3px solid #ffab07; 
+     cursor: pointer;
 }
+
+.color-options .grey-box a {
+    color: rgb(154, 154, 154);
+}
+
+.navy-box:hover {
+    border: 3px solid #ffab07;
+}
+.black-box:hover {
+    border: 3px solid #ffab07;
+}
+.white-box:hover {
+    border: 3px solid #ffab07;
+}
+.darkgrey-box:hover {
+    border: 3px solid rgb(118, 20, 20);
+}
+
+.grey-box-black:hover {
+    border: 3px solid #ffab07;
+}
+
+.grey-box-white:hover {
+    border: 3px solid #ffab07;
+}
+
+.grey-box-navy:hover{
+    border: 3px solid #ffab07;
+}
+
+
 
 
 @media only screen and (max-width: 867px) {
