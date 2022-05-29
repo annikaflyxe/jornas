@@ -13,47 +13,80 @@
   <link rel="stylesheet" href="style.css" />
 
   <body>
-    <!-- <nav class="navbar">
-      <a class="navlogo"><img src="assets/logo.png" alt="logo" /></a>
+    <nav class="navbar">
+      <a class="navlogo" href="index.html"
+        ><img src="assets/logo.png" alt="logo"
+      /></a>
 
       <ul class="navmenu">
-        <li class="navitem-1"> -->
-    <!-- <a class="navlink-1"
-            >SHOP
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              aria-hidden="true"
-              role="img"
-              class="iconify iconify--ic"
-              width="15"
-              height="15"
-              preserveAspectRatio="xMidYMid meet"
-              viewBox="0 0 24 24"
-            >
-              <path fill="#307759" d="m7 10l5 5l5-5H7z"></path></svg
-          ></a> -->
-    <!-- </li>
+        <div class="navitem-1">
+          <div class="dropdown">
+            <div class="navlink-1">SHOP</div>
+            <!-- <div class="dropdown">
+              <button class="dropbtn">SHOP <img src="/assets/arrow.png" alt="arrow" class="nav-arrow"> </button>
+              <div class="dropdown-content">
+                <a href="overdele.html">Overdele</a>
+                <a href="underdele.html">Underdele</a>
+                <a href="accessories.html">Accessories</a>
+                <a href="diverse.html">Diverse</a>
+              </div>
+            </div> -->
+
+            <div class="option">
+              <div onclick="('Kategorier')"><b>Kategorier</b></div>
+              <img src="assets/swigly.png" width="270" height="20" alt="line" />
+              <div onclick="('Overdele')">
+                <a href="overdele.html">Overdele</a>
+              </div>
+              <div onclick="('Underdele')">
+                <a href="underdele.html">Underdele</a>
+              </div>
+              <div onclick="('Accessories')">
+                <a href="accessories.html">Accessories</a>
+              </div>
+              <div onclick="('Diverse')">
+                <a href="diverse.html">Diverse</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          let dropdown = document.querySelector(".dropdown");
+          dropdown.onclick = function () {
+            dropdown.classList.toggle("active");
+          };
+        </script>
 
         <li class="navitem">
-          <a class="navlink">OM OS</a>
+          <a class="navlink" href="omos.html">OM OS</a>
         </li>
         <li class="navitem">
-          <a class="navlink">KONTAKT</a>
+          <a class="navlink" href="kontakt.html">KONTAKT</a>
         </li>
         <li class="navitem">
-          <a class="navlink">TRYKKERI</a>
+          <a class="navlink" href="#">TRYKKERI</a>
         </li>
 
         <div class="icons">
-          <a class="navlink"><img src="assets/search.png" alt="search" /></a>
+          <a href="checkout.html" class="navlink"
+            ><img src="assets/search.png" alt="search"
+          /></a>
 
-          <a class="navlink"><img src="assets/cart.png" alt="search" /></a>
+          <a href="checkout.html" class="navlink"
+            ><img src="assets/cart.png" alt="search"
+          /></a>
 
-          <a class="navlink"><img src="assets/profile.png" alt="search" /></a>
+          <a href="checkout.html" class="navlink"
+            ><img src="assets/profile.png" alt="search"
+          /></a>
         </div>
       </ul>
-    </nav> -->
+
+      <div class="hamburger">
+        <img src="assets/burger.png" alt="burger" />
+      </div>
+    </nav>
 
     <main class="main-index">
       <!-- section 1 starts -->
