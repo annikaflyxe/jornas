@@ -95,6 +95,14 @@ h3 {
     
 }
 
+.icons > ul > li {
+    position: relative;
+}
+
+.icons a {
+    text-decoration: none; 
+}
+
 .navmenu {
     display: flex;
     justify-content: space-between;
@@ -114,6 +122,59 @@ h3 {
     max-width: 50px;
     padding-left: 10px;
 }
+
+.sub-menu {
+    position: absolute;
+    width: 180px;
+    top: 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    background-color: white;
+    border: 1px solid black;
+    z-index: 30000;
+  }
+
+  .sub-menu li {
+      border-bottom: 1px solid rgb(56, 111, 83);
+      padding-top: 10px;
+      padding-left: 5px;
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+  }
+
+
+
+  .sub-menu a {
+    color: black;
+    padding-bottom: 5px;
+   
+    display: block;
+  }
+
+  .sub-menu .go-to-checkout {
+      border: black solid 1px;
+      margin-left: 5px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-right: 5px;
+      text-align: center;
+      
+  }
+
+
+  .sub-menu .go-to-checkout p {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+  .cart-with-children:hover ul,
+.cart-with-children ul.focused {
+  opacity: 1;
+  visibility: visible;
+}
+
+
 
 .navitem {
     margin-left: 2rem;
@@ -515,6 +576,35 @@ animation-duration: 1s;
     margin-left: 20vw;
     text-align: center;
  
+}
+
+.omos {
+  
+    justify-content: center;
+    margin-right: 20vw;
+    margin-left: 20vw;
+    text-align: center;
+ 
+}
+
+.omos h2 {
+  
+    justify-content: center;
+    margin-right: 20vw;
+    margin-left: 20vw;
+    text-align: center;
+    margin-bottom: 30px;
+ 
+}
+
+.omos p {
+    border-top: 1px solid black;
+    padding-top: 40px;
+}
+
+.omos img {
+    max-width: 400px;
+    margin-top: 40px;
 }
 
 .contact h2 {
@@ -928,6 +1018,45 @@ margin-right: 20px;
         }
     
       }
+
+/*----------------Footer----------------*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-top: 1px solid #482828;
+    border-bottom: 1px solid #482828; 
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #482828;
+}
+
+footer h2 {
+    color: #482828;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #482828;
+}
+
+footer img {
+    max-width: 120px;
+    
+}
+
+
+
+footer .footer-4 img {
+    max-width: 40px;
+    padding-right: 5px;
+    margin-top: 10px;
+}
+
 
 
 
@@ -1370,6 +1499,10 @@ margin-right: 20px;
         width: 60%;
         
       }
+
+      .omos img {
+        max-width: 300px;
+    }
     
 
 
@@ -1386,6 +1519,17 @@ margin-right: 20px;
         text-align: center;
      
     }
+
+    .omos {
+  
+        justify-content: center;
+        margin-right: 5vw;
+        margin-left: 5vw;
+        text-align: center;
+     
+    }
+
+   
 
     .popup {
        
