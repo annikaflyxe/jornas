@@ -399,13 +399,11 @@ cursor: pointer
     
 }
 
-.product body:hover {
-   
-    background-color: yellow;
-  
-   
+.list-container .product-img:hover{
+   border: 3px solid #ffab07;
     
 }
+
 
 .list-container .product-img {
     width: 250px;
@@ -453,6 +451,7 @@ cursor: pointer
     margin-right: 10px
 }
 
+
 .product-title {
    
    display: flex;
@@ -482,7 +481,8 @@ animation-duration: 1s;
    
 }
 
-.list-container .product:hover {
+
+.product:hover {
     width: 300px;
     height: 350px;
     padding-left: 25px;
@@ -492,9 +492,12 @@ animation-duration: 1s;
     animation-name: fadeup; 
     animation-duration: 1s; 
     cursor: pointer;
+    
    
     
 }
+
+
 
 
 @keyframes fadeup {
@@ -964,6 +967,107 @@ margin-right: 20px;
 }
 
 
+.overlay-2 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 300000;
+  }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 300000;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  .overlay-2:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  .popup {
+    margin: 250px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid black;
+    width: 30%;
+    position: relative;
+    transition: all 2s ease-in-out;
+  }
+
+  .popup-2 {
+    margin: 250px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid black;
+    width: 30%;
+    position: relative;
+    transition: all 2s ease-in-out;
+  }
+
+  .product-section-text .popup-2 h2 {
+      margin-bottom: 0px;
+  }
+
+  .popup-2 .content h2 {
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: 20px;
+      margin-bottom: 0px;
+  }
+
+ 
+
+ .product-section-text .content p {
+      margin-top: 20px;
+  }
+
+  .popup-2 .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+
+  .popup-2 .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+
 
 
 .product-section-text{
@@ -1010,6 +1114,7 @@ margin-right: 20px;
 
 .size-options {
     display: flex;
+
     
 }
 
@@ -1020,6 +1125,7 @@ margin-right: 20px;
 .size-options p {
     margin-right: 30px;
     margin-bottom: 20px;
+    cursor: pointer;
     
 }
 
@@ -1042,51 +1148,203 @@ margin-right: 20px;
     font-family:neue-haas-grotesk-display, sans-serif;
 }
 
+.addtocart:hover {
+   background-color: white;
+   cursor: pointer;
+  
+   
+
+}
+
+
+
 .color-options {
     display: flex; 
     margin-bottom: 15px;
+    max-height: 26px;
+    
     
 }
+
+.color-options a {
+    text-decoration: none;
+}
+
 
 .color-options .navy-box {
     background-color: rgb(43, 51, 134);
-    padding-right: 12px;
-    margin-right: 6px;
+    padding-right: 15px;
+    margin-right: 7px;
     color: rgb(43, 51, 134);
     border: 3px solid rgb(43, 51, 134); 
+    cursor: pointer;
     
 }
 
+.color-options .navy-box a {
+    color: rgb(43, 51, 134);
+    
+   
+    
+}
+
+.color-options .navy-box-navy {
+    background-color: rgb(43, 51, 134);
+    padding-right: 15px;
+    margin-right: 7px;
+    color: rgb(43, 51, 134);
+    border: 3px solid #ffab07; 
+    cursor: pointer;
+    
+}
+
+.color-options .navy-box-navy a {
+    color: rgb(43, 51, 134);
+    
+   
+    
+}
+
+.color-options .black-box-black {
+    background-color: rgb(0, 0, 0);
+    padding-right: 15px;
+    margin-right: 7px;
+     color: rgb(0, 0, 0);
+     border: 3px solid #ffab07; 
+     cursor: pointer;
+}
+
+.color-options .black-box-black a {
+    color: black;
+}
+
+
 .color-options .black-box {
     background-color: rgb(0, 0, 0);
-    padding-right: 12px;
-    margin-right: 6px;
+    padding-right: 15px;
+    margin-right: 7px;
      color: rgb(0, 0, 0);
      border: 3px solid rgb(0, 0, 0); 
+     cursor: pointer;
+}
+
+.color-options .black-box a {
+    color: black;
+}
+
+.color-options .white-box-white {
+    background-color: rgb(255, 255, 255);
+    padding-right: 15px;
+    margin-right: 7px;
+     color: rgb(255, 255, 255);
+     border: 3px solid #ffab07; 
+     cursor: pointer;
+}
+.color-options .white-box-white a {
+    color: white;
 }
 
 .color-options .white-box {
     background-color: rgb(255, 255, 255);
-    padding-right: 12px;
-    margin-right: 6px;
+    padding-right: 15px;
+    margin-right: 7px;
      color: rgb(255, 255, 255);
      border: 3px solid rgb(255, 255, 255); 
+     cursor: pointer;
+}
+.color-options .white-box a {
+    color: white;
 }
 .color-options .darkgrey-box {
     background-color: rgb(72, 72, 72);
-    padding-right: 12px;
-    margin-right: 6px;
+    padding-right: 15px;
+    margin-right: 7px;
      color: rgb(72, 72, 72);
      border: 3px solid rgb(72, 72, 72); 
+     cursor: pointer;
+}
+.color-options .darkgrey-box a {
+    color: rgb(72, 72, 72);
+}
+
+.color-options .grey-box-black {
+    background-color: rgb(154, 154, 154);
+    padding-right: 15px;
+    margin-right: 7px;
+     color: rgb(154, 154, 154);
+     border: 3px solid rgb(154, 154, 154); 
+     cursor: pointer;
+}
+
+.color-options .grey-box-white a {
+    color: rgb(154, 154, 154);
+}
+
+.color-options .grey-box-white {
+    background-color: rgb(154, 154, 154);
+    padding-right: 15px;
+    margin-right: 7px;
+     color: rgb(154, 154, 154);
+     border: 3px solid rgb(154, 154, 154); 
+     cursor: pointer;
+}
+
+.color-options .grey-box-navy a {
+    color: rgb(154, 154, 154);
+}
+
+.color-options .grey-box-navy {
+    background-color: rgb(154, 154, 154);
+    padding-right: 15px;
+    margin-right: 7px;
+     color: rgb(154, 154, 154);
+     border: 3px solid rgb(154, 154, 154); 
+     cursor: pointer;
+}
+
+.color-options .grey-box-black a {
+    color: rgb(154, 154, 154);
 }
 
 .color-options .grey-box {
     background-color: rgb(154, 154, 154);
-    padding-right: 12px;
-    margin-right: 6px;
+    padding-right: 15px;
+    margin-right: 7px;
      color: rgb(154, 154, 154);
-     border: 3px solid rgb(57, 90, 70); 
+     border: 3px solid #ffab07; 
+     cursor: pointer;
 }
+
+.color-options .grey-box a {
+    color: rgb(154, 154, 154);
+}
+
+.navy-box:hover {
+    border: 3px solid #ffab07;
+}
+.black-box:hover {
+    border: 3px solid #ffab07;
+}
+.white-box:hover {
+    border: 3px solid #ffab07;
+}
+.darkgrey-box:hover {
+    border: 3px solid rgb(118, 20, 20);
+}
+
+.grey-box-black:hover {
+    border: 3px solid #ffab07;
+}
+
+.grey-box-white:hover {
+    border: 3px solid #ffab07;
+}
+
+.grey-box-navy:hover{
+    border: 3px solid #ffab07;
+}
+
+
 
 
 @media only screen and (max-width: 867px) {
@@ -1100,6 +1358,19 @@ margin-right: 20px;
     .product-text-bottom-text {
         margin-top: 20px;
     }
+
+    .popup {
+       
+        width: 60%;
+        
+      }
+
+      .popup-2 {
+       
+        width: 60%;
+        
+      }
+    
 
 
 
@@ -1115,6 +1386,18 @@ margin-right: 20px;
         text-align: center;
      
     }
+
+    .popup {
+       
+        width: 80%;
+        
+      }
+
+      .popup-2 {
+       
+        width: 80%;
+        
+      }
 }
 
 @media only screen and (max-width: 440px) {
