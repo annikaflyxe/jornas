@@ -113,7 +113,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 350px;
+    margin-left: 25vw;
 
 
 }
@@ -287,7 +287,7 @@ cursor: pointer
 
 @media only screen and (max-width: 1450px) {
     .icons {
-        margin-left: 240px;
+        margin-left: 20vw;
     }
 }
 @media only screen and (max-width: 1200px) {
@@ -974,6 +974,79 @@ margin-right: 20px;
       }
 }
 
+/*-----product-page---------*/ 
+
+.list-container-instagram {
+    background: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+   
+    margin-top: 10px;
+
+
+    
+}
+
+.title-for-instagram {
+    margin-left: 10%;
+    margin-top: 50px;
+    margin-right: 10%;
+    padding-top: 20px;
+    border-top: 1px solid black;
+}
+
+.list-container-instagram .product-instagram {
+    width: 170px;
+    height: 230px;
+    background: none;
+  
+    margin-left: 15px;
+    margin-top: 20px;
+   
+    
+}
+
+.list-container-instagram .product-instagram-img:hover{
+   border: 3px solid #ffab07;
+    
+}
+
+
+.list-container-instagram .product-instagram-img {
+    width: 170px;
+    height: 230px;
+    background: none;
+    position: relative; 
+    overflow: hidden; 
+    
+}
+
+.list-container-instagram .product-instagram-img img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.list-container-instagram p {
+    padding-top: 7px;
+}
+
+.list-container-instagram .product-name {
+    display: flex;
+}
+
+.list-container-instagram .price {
+    padding-left: 35px;
+}
+
+.product-name-instagram p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 
 
@@ -1022,9 +1095,10 @@ margin-right: 20px;
      .smile-tak img {
          max-width: 200px;
          margin-top: 30px;
-         animation: rotating 1s linear;
+         animation: rotating 1s infinite;
          animation-timing-function: linear; 
      }
+
   
    
      @keyframes rotating {
@@ -1039,6 +1113,131 @@ margin-right: 20px;
     
       }
 
+      .follow-instagram {
+          margin-left: 80px;
+          margin-bottom: 20px;
+      }
+
+      .order-number h1 {
+          color: black;
+          text-align: center;
+          font-size: 19px;
+          margin-top: 20px;
+      }
+
+      .order-print a {
+          text-decoration: underline;
+          color: black;
+          
+      }
+
+      .order-print {
+          text-align: center;
+          margin-bottom: 150px;
+          margin-top: 20px;
+      }
+
+
+      .instagram-follow {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-auto-columns: 1fr;
+        margin-left: 80px;
+        margin-right: 80px;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "img-1 img-2 img-3 img-4 img-5 img-6";
+      }
+
+      .instagram-follow img {
+        width: 175px;
+        height: 240px;
+        background: none;
+        position: relative; 
+        overflow: hidden; 
+      }
+      
+      .img-1 { grid-area: img-1; }
+      
+      .img-2 { grid-area: img-2; }
+      
+      .img-3 { grid-area: img-3; }
+      
+      .img-4 { grid-area: img-4; }
+      
+      .img-5 { grid-area: img-5; }
+      
+      .img-6 { grid-area: img-6; }
+
+
+      @media only screen and (max-width: 1300px) {
+
+
+
+      .instagram-follow {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-auto-columns: 1fr;
+        margin-left: 5px;
+        margin-right: 5px;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "img-1 img-2 img-3 img-4 img-5 img-6";
+      }
+
+      .follow-instagram {
+        margin-left: 5px;
+        margin-bottom: 20px;
+    }
+    }
+  
+      @media only screen and (max-width: 1000px) {
+         
+      .instagram-follow {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr;
+        margin-left: 20px;
+        margin-right: 20px;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "img-1 img-2 img-3"
+           "img-4 img-5 img-6";
+      } 
+
+      .display-text {
+        font-size: 85px;
+    }
+      }
+
+      @media only screen and (max-width: 600px) {
+         
+        .instagram-follow {  display: grid;
+          grid-template-columns: 1fr 1fr ;
+          grid-template-rows: 1fr 1fr 1fr;
+          margin-left: 10px;
+          margin-right: 10px;
+          gap: 0px 0px;
+          grid-auto-flow: row;
+          grid-template-areas:
+            "img-1 img-2"
+            "img-3 img-4"
+             "img-5 img-6";
+        }
+        
+        .smile-tak { 
+            display: none;
+           }
+        
+
+        .display-text {
+            font-size: 70px;
+        }
+
+    }
+
 /*----------------Footer----------------*/
 
 footer {
@@ -1050,6 +1249,8 @@ footer {
     justify-content: space-between;
     padding-top: 50px;
     padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
     color: #482828;
@@ -1076,6 +1277,10 @@ footer .footer-4 img {
     padding-right: 5px;
     margin-top: 10px;
 }
+
+
+/*-------------Pop ups----------------*/
+
 
 
 
