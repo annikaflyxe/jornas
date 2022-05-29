@@ -1529,6 +1529,22 @@ footer .footer-4 img {
      
     }
 
+    footer img {
+        display: none;
+        
+    }
+
+    footer h2 {
+        font-size: 15px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+    footer .footer-4 img {
+        display: block;
+    }
+
    
 
     .popup {
