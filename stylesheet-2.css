@@ -954,6 +954,26 @@ margin-right: 20px;
     
 }
 
+@media only screen and (max-width:1200px) {
+    .checkout-section {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin-top: 20px;
+        
+        grid-auto-columns: 1fr;
+        gap: 0px 20px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "products-checkout products-checkout"
+          "buying-details buying-details";
+      }
+
+      .buying-details {
+          margin-top: 20px;
+      }
+}
+
 
 
 
