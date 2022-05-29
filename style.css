@@ -427,7 +427,7 @@ a:hover {
   border: solid 2px var(--color-black);
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 700px) {
   body {
     padding-left: var(--body-mobile-padding-left-right);
     padding-right: var(--body-mobile-padding-left-right);
@@ -476,6 +476,7 @@ a:hover {
     display: grid;
     grid-template-columns: var(--one-column-grid-mobile);
     margin-top: -17vh;
+    margin-left: var(--spacing-20);
   }
 
   .CTA-button {
@@ -917,6 +918,13 @@ li {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+}
+
+.h2-popular-styles {
+  font-family: var(--font-family-display);
+  font-size: var(--heading-2-font-size);
+  color: var(--color-text-display);
+  text-align: center;
 }
 
 .popular-styles {
@@ -1411,10 +1419,8 @@ li {
 
 @media only screen and (max-width: 390px) {
   body {
-    /* padding-left: var(--body-mobile-padding-left-right);
-    padding-right: var(--body-mobile-padding-left-right); */
-    padding: 0px;
-    margin: 0px;
+    padding-left: var(--body-mobile-padding-left-right);
+    padding-right: var(--body-mobile-padding-left-right);
   }
 
   .hero-section {
