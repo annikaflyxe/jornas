@@ -1302,7 +1302,14 @@ footer .footer-4 img {
 
 
 .banner {
-    background: #ffab07;
+    background: none;
+    border-bottom: 1px solid #482828;
+   
+  }
+
+  .banner p {
+      color: #482828;
+      margin-right: 20px;
   }
   
   .banner__content {
@@ -1311,10 +1318,11 @@ footer .footer-4 img {
     margin: 0 auto;
     display: flex;
     align-items: center;
+    
   }
   
   .banner__text {
-    flex-grow: 1;
+
     line-height: 1.4;
    
   }
@@ -1323,12 +1331,11 @@ footer .footer-4 img {
     background: none;
     border: none;
     cursor: pointer;
+    
   }
   
-  .banner__text,
-  .banner__close > span {
-    color: black;
-  }
+    
+
   
 
 

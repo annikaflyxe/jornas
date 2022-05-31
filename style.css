@@ -187,7 +187,7 @@
   --padding-left-right-button: var(--padding-40);
   --padding-top-bottom-button: var(--padding-10);
   --margin-top-bottom-button: var(--spacing-15);
-  --border-width-button: var(--border-width-thick);
+  --border-width-button: var(--border-width-thin);
   --button-line-height: var(--button-line-height);
   --button-text-color: var(--color-green);
   --button-border-width-focus: var(--border-thicker);
@@ -491,6 +491,7 @@ a:hover {
     max-width: var(--button-max-width-mobile);
     font-size: var(--button-mobile-font-size);
     text-align: var(--button-mobile-alignment);
+    
   }
 
   .button {
@@ -502,6 +503,7 @@ a:hover {
     background-color: var(--color-green);
     color: var(--color-beige);
     border: 1px solid var(--color-beige);
+   
   }
 }
 
@@ -860,12 +862,24 @@ li {
   margin-top: 20vh;
 }
 
+.h1-index-line {
+    font-family: var(--font-family-display);
+    font-size: var(--heading-display-font-size);
+    color: transparent;
+    -webkit-text-stroke-width: var(--text-stroke-width);
+    -webkit-text-stroke-color: var(--color-text-display);
+  }
+
 .h2-index-mobile {
   visibility: hidden;
 }
 
 .hero-img {
-  width: 50vw;
+  width: 40vw;
+}
+
+.hero-text {
+  padding-right: 100px;
 }
 
 .decoration-circle {
@@ -1536,15 +1550,17 @@ footer .footer-4 img {
   }
 
   .img-container {
-    width: 100vw;
+   
     overflow: hidden;
   }
+
+  
 
   .h1-index {
     visibility: hidden;
   }
   .hero-text {
-    width: 100vw;
+    width: 90vw;
     position: absolute;
     padding: var(--body-mobile-padding-left-right);
     justify-items: center;
