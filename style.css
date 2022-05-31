@@ -582,10 +582,11 @@ li {
 
 .navitem-1 .navlink-1 {
   font-size: 17px;
-  margin-top: 30px;
+  margin-top: 15px;
   font-weight: 600;
   color: var(--header);
   font-family: neue-haas-grotesk-display, sans-serif;
+  cursor: pointer;
 }
 
 .navitem-1 .dropdown {
