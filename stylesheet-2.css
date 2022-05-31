@@ -1301,6 +1301,39 @@ footer .footer-4 img {
 
 
 
+.banner {
+    background: #ffab07;
+  }
+  
+  .banner__content {
+    padding: 16px;
+    max-width: 650px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .banner__text {
+    flex-grow: 1;
+    line-height: 1.4;
+   
+  }
+  
+  .banner__close {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .banner__text,
+  .banner__close > span {
+    color: black;
+  }
+  
+
+
+
+
 
 /*-----------------Product Page--------------------*/
 
@@ -1490,6 +1523,10 @@ footer .footer-4 img {
 }
 
 .size-options p:hover {
+    font-weight: 600;
+}
+
+.size-options p:active {
     font-weight: 600;
 }
 
