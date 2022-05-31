@@ -193,6 +193,7 @@ h3 {
     font-weight: 600;
     color: var(--header);
     font-family:neue-haas-grotesk-display, sans-serif;
+    cursor: pointer;
 }
 
 .navitem-1 .dropdown{
@@ -472,8 +473,24 @@ cursor: pointer
     background: none;
     position: relative; 
     overflow: hidden; 
+    text-align: center;
+    
+ 
     
 }
+
+.centered {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color:#ffac07;
+    color: white;
+    
+  }
 
 .list-container .product img {
     flex-shrink: 0;
