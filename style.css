@@ -578,7 +578,7 @@ li {
 
 .navlink {
   font-size: 17px;
-  color: var(--text);
+  color: var(--color-brown);
   font-family: neue-haas-grotesk-display, sans-serif;
   z-index: 1;
 }
@@ -587,7 +587,7 @@ li {
   font-size: 17px;
   margin-top: 15px;
   font-weight: 600;
-  color: var(--header);
+  color: var(--color-brown);
   font-family: neue-haas-grotesk-display, sans-serif;
   cursor: pointer;
 }
@@ -893,7 +893,10 @@ li {
 
 .h1-index {
   margin-top: 20vh;
+ 
 }
+
+
 
 .h1-index-line {
     font-family: var(--font-family-display);
@@ -908,7 +911,7 @@ li {
 
 .hero-img {
   width: 40vw;
-  background-color: var(--color-green);
+  
   padding-right: 20px;
 }
 
@@ -987,8 +990,10 @@ li {
 .h2-popular-styles {
   font-family: var(--font-family-display);
   font-size: var(--heading-2-font-size);
-  color: var(--color-text-display);
-  text-align: center;
+  color: var(--color-brown);
+  text-align: right;
+  margin-right: 80px;
+ 
 }
 
 .popular-styles {
@@ -996,33 +1001,72 @@ li {
   background-color: var(--background-color);
   margin: -100px;
   margin-top: 0px;
-  margin-bottom: 15vh;
+  margin-bottom: 5vh;
 }
 
 .horizontal_slider {
   display: block;
   width: 100%;
   overflow-x: scroll;
-  margin-top: 10rem;
+  margin-top: 3rem;
   padding-right: 100px;
   padding-left: 100px;
 }
 
+
+
 .slider_container {
-  display: block;
+  position: relative;
+  overflow: hidden; 
   white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 24px; 
+  
+}
+
+
+
+.slider_container .item {
+  scroll-snap-align: start; 
+  animation: slideshow 40s linear infinite; 
+ 
+}
+
+.slider_container .item:hover {
+  animation-play-state: paused; 
+}
+
+
+
+
+@keyframes slideshow {
+  0% {left: 0;}
+  100% {left:-200%;}
 }
 
 .item {
   display: inline-block;
   margin-right: 10px;
+  width: 250px;
+  height: 350px;
+  background: none;
+  position: relative;
+  overflow: hidden;
 }
 
 .item img {
-  width: 20vw;
+  height: 300px;
+  width: 250px;
+}
+
+.item img {
   display: grid;
   grid-template-rows: 1fr 1fr;
   border: var(--border);
+}
+
+.item img:hover {
+  border: 3px solid var(--color-orange);
 }
 
 .image1 {
@@ -1965,10 +2009,14 @@ footer .footer-4 img {
 
   .h2-popular-styles {
     font-size: var(--heading-2-mobile-font-size);
-    margin-left: 18rem;
-    margin-top: 27vh;
+    margin-top: 26vh;
     margin-bottom: -15vh;
+
+
+    
   }
+  
+
 
   .index-section-links-container {
     margin-left: 0px;
@@ -1993,6 +2041,7 @@ footer .footer-4 img {
     margin: -100px;
     margin-top: 5vh;
     width: 44.5rem;
+    
   }
 
   .image1 {
