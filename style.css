@@ -260,6 +260,7 @@ body {
   transition: var(--button-transition);
   margin-top: var(--margin-top-bottom-button);
   max-width: var(--button-max-width-desktop);
+  margin-right: 12px;
 }
 
 .button {
@@ -704,12 +705,16 @@ li {
   .icons {
     margin-left: 170px;
   }
+
+
 }
 
 @media only screen and (max-width: 1100px) {
   .icons {
     margin-left: 100px;
   }
+
+ 
 }
 
 @media only screen and (max-width: 1030px) {
@@ -848,7 +853,25 @@ li {
 .hero-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr; 
   background-color: #ffab07;
+  grid-template-areas:
+  "img-container hero-text";
+  animation-name: fadeInUp;
+  animation-duration: 2s; 
+  
+  
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(100px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
 
 /* .hero-text {
@@ -868,18 +891,26 @@ li {
     color: transparent;
     -webkit-text-stroke-width: var(--text-stroke-width);
     -webkit-text-stroke-color: var(--color-text-display);
+    text-decoration: none;
+    pointer-events: none;
   }
 
-.h2-index-mobile {
-  visibility: hidden;
-}
 
 .hero-img {
   width: 40vw;
 }
 
 .hero-text {
+  grid-area: hero-text;
   padding-right: 100px;
+  margin-left: 30px;
+
+
+  
+}
+
+.img-container {
+  grid-area: img-container; 
 }
 
 .decoration-circle {
@@ -1034,6 +1065,46 @@ li {
   position: inherit;
   text-align: center;
 }
+
+
+/*-------------media queries index--------------*/
+
+@media only screen and (max-width: 1100px) {
+  
+
+  .hero-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr 0.8fr; 
+    background-color: #ffab07;
+    margin-top: -90px;
+    grid-template-areas:
+    "hero-text"
+    "img-container"
+     ;
+    
+  }
+
+  .hero-img {
+    width: 90vw;
+    margin-left: 0px;
+    margin-top: 20px;
+    animation-name: fadeUp;
+    animation-duration: 2s; 
+  }
+
+  .hero-text {
+    
+    animation-name: fadeUp;
+    animation-duration: 2s; 
+  }
+
+ 
+}
+
+
+
+  
 
 /*--------------------Product-list---------------------------*/
 
@@ -1556,9 +1627,6 @@ footer .footer-4 img {
 
   
 
-  .h1-index {
-    visibility: hidden;
-  }
   .hero-text {
     width: 90vw;
     position: absolute;
@@ -1567,9 +1635,7 @@ footer .footer-4 img {
     padding-top: 25vh;
   }
 
-  .p-hero {
-    visibility: hidden;
-  }
+
 
   .decoration-wire {
     width: 100vw;
@@ -1729,9 +1795,9 @@ footer .footer-4 img {
     overflow: hidden;
   }
 
-  .h1-index {
-    visibility: hidden;
-  }
+ 
+
+  
   .hero-text {
     width: 100vw;
     position: absolute;
@@ -1740,9 +1806,6 @@ footer .footer-4 img {
     padding-top: 25vh;
   }
 
-  .p-hero {
-    visibility: hidden;
-  }
 
   .decoration-wire {
     width: 100vw;
