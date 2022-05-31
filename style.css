@@ -582,12 +582,15 @@ li {
 
 .navitem-1 .navlink-1 {
   font-size: 17px;
-  margin-top: 15px;
+  margin-top: 30px;
   font-weight: 600;
   color: var(--header);
   font-family: neue-haas-grotesk-display, sans-serif;
   cursor: pointer;
 }
+
+
+
 
 .navitem-1 .dropdown {
   font-size: 17px;
@@ -604,43 +607,25 @@ li {
 
 /*Dropdown*/
 
-.dropbtn {
-  background-color: #04aa6d;
-  color: black;
-  font-family: neue-haas-grotesk-display, sans-serif;
-  padding: 16px;
-  font-size: 20px;
-  border: none;
-  z-index: 1;
-  font-weight: 600;
-}
 
-.dropdown {
+.dropdown-index {
   position: relative;
-  display: inline-block;
-  z-index: 1;
-}
-
-#text {
-  color: green;
-}
-
-.dropdown {
-  position: relative;
-  margin-top: 0px;
   width: 70px;
   height: 50px;
 }
 
-.dropdown::before {
-  content: "";
+
+
+
+.dropdown-index::before {
+  content: '';
   position: absolute;
   right: 0px;
-  top: 2px;
+  top: 3px;
   z-index: 10000;
   width: 7px;
   height: 7px;
-  border: 2px solid var(--header);
+  border: 2px solid black;
   border-top: 2px solid var(--background-color);
   border-right: 2px solid var(--background-color);
   transform: rotate(-45deg);
@@ -648,12 +633,12 @@ li {
   cursor: pointer;
 }
 
-.dropdown.active::before {
+.dropdown-index.active::before {
   transform: rotate(-225deg);
   top: 8px;
 }
 
-.dropdown .option {
+.dropdown-index .option {
   position: absolute;
   top: 60px;
   width: 300px;
@@ -667,23 +652,23 @@ li {
   display: none;
 }
 
-.dropdown.active .option {
+.dropdown-index.active .option {
   display: block;
 }
 
-.dropdown .option a {
+.dropdown-index .option a {
   font-size: 17px;
   text-decoration: none;
   color: black;
   font-weight: 400;
 }
 
-.dropdown .option div {
+.dropdown-index .option div {
   padding: 12px 20px;
   cursor: pointer;
 }
 
-.dropdown .option a:hover {
+.dropdown-index .option a:hover {
   color: var(--header);
 }
 

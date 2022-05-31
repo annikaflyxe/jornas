@@ -72,13 +72,17 @@
       /></a>
 
       <ul class="navmenu">
+
+
         <div class="navitem-1">
-          <div class="dropdown">
+          <div class="dropdown-index">
+
             <div class="navlink-1">SHOP</div>
 
             <div class="option">
               <div onclick="('Kategorier')"><b>Kategorier</b></div>
               <img src="assets/swigly.png" width="270" height="20" alt="line" />
+             
               <div onclick="('Overdele')">
                 <a href="overdele.html">Overdele</a>
               </div>
@@ -96,7 +100,7 @@
         </div>
 
         <script>
-          let dropdown = document.querySelector(".dropdown");
+          let dropdow = document.querySelector(".dropdown-index");
           dropdown.onclick = function () {
             dropdown.classList.toggle("active");
           };
