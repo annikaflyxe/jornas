@@ -587,10 +587,13 @@ li {
 }
 
 .navmenu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1;
+ 
+    display: flex;
+    margin-right: 60px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+  
 }
 
 .icons {
