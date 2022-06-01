@@ -1,478 +1,425 @@
 <!DOCTYPE html>
-<html lang="en">
-<meta charset="UTF-8">
-<title>Page Title</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Overdele | Jørnæs</title>
+    <meta
+      name="description"
+      content="Udforsk vores udvalg af overdele. Vi har hættetrøjer, t-shirts og sweatshirts i lækkert bomuldsstof. Se udvalget her »"
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-<link rel="stylesheet" href="https://use.typekit.net/hfy3viz.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="stylesheet-2.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hfy3viz.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheet-2.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Fruit Of The Loom Sweatshirt",
+        "image": "https://norrbohm.com/cecilie-kea/3-sem/exam/assets/sweater-shot.png",
+        "description": "Lækker sweater fra Fruit Of The Loom. Køb 2 for 250DKK.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Fruit Of The Loom"
+        },
+        "sku": "201-M-Gråmeleret",
+        "mpn": "123456",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://norrbohm.com/cecilie-kea/3-sem/exam/overdele.html",
+          "priceCurrency": "DKK",
+          "price": "125",
+          "priceValidUntil": "2022-06-25",
+          "availability": "https://schema.org/OnlineOnly",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4",
+          "bestRating": "4",
+          "worstRating": "3",
+          "ratingCount": "1",
+          "reviewCount": "1"
+        },
+        "review": {
+          "@type": "Review",
+          "name": "Louise",
+          "reviewBody": "En super lækker sweater jeg nærmest bor i for tiden",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4",
+            "bestRating": "4",
+            "worstRating": "3"
+          },
+          "datePublished": "2022-06-01",
+          "author": { "@type": "Person", "name": "Louise" },
+          "publisher": { "@type": "Organization", "name": "Reviews.dk" }
+        }
+      }
+    </script>
+  </head>
 
-
-<body>
-
-    
-
-   
-
+  <body>
     <nav class="navbar">
-        <a class="navlogo" href="index.html"><img src="assets/logo.png" alt="logo"></a>
+      <a class="navlogo" href="index.html"
+        ><img src="assets/logo.png" alt="logo"
+      /></a>
 
-
-      <ul class='navmenu'>
-
+      <ul class="navmenu">
         <div class="navitem-1">
-            <div class="dropdown">
-              
-                    <div class="navlink-1">SHOP </div>
-                
-                
-                    <div class="option">
-                        <div onclick="('Kategorier')"><b>Kategorier</b></div>
-                        <img src="assets/swigly.png" width="270" height="20" alt="line">
-                        <div onclick="('Overdele')"><a href="overdele.html">Overdele</a></div>
-                        <div onclick="('Underdele')"><a href="underdele.html">Underdele</a></div>
-                        <div onclick="('Accessories')"><a href="accessories.html">Accessories</a></div>
-                        <div onclick="('Diverse')"><a href="diverse.html">Diverse</a></div>
-                        
-                    </div>
-                
-                
-                </div>
+          <div class="dropdown">
+            <div class="navlink-1">SHOP</div>
+
+            <div class="option">
+              <div onclick="('Kategorier')"><b>Kategorier</b></div>
+              <img src="assets/swigly.png" width="270" height="20" alt="line" />
+              <div onclick="('Overdele')">
+                <a href="overdele.html">Overdele</a>
+              </div>
+              <div onclick="('Underdele')">
+                <a href="underdele.html">Underdele</a>
+              </div>
+              <div onclick="('Accessories')">
+                <a href="accessories.html">Accessories</a>
+              </div>
+              <div onclick="('Diverse')">
+                <a href="diverse.html">Diverse</a>
+              </div>
             </div>
+          </div>
+        </div>
 
-            <script>
-               
-               let dropdown = document.querySelector('.dropdown');
-               dropdown.onclick = function(){
-                   dropdown.classList.toggle('active');
-               }
-            </script>
-
-       
+        <script>
+          let dropdown = document.querySelector(".dropdown");
+          dropdown.onclick = function () {
+            dropdown.classList.toggle("active");
+          };
+        </script>
 
         <li class="navitem">
-          
-            <a class="navlink" href="omos.html">OM OS</a>
-   
+          <a class="navlink" href="omos.html">OM OS</a>
         </li>
         <li class="navitem">
-       
-            <a class="navlink" href="kontakt.html">KONTAKT</a>
-  
+          <a class="navlink" href="kontakt.html">KONTAKT</a>
         </li>
         <li class="navitem">
-       
-            <a class="navlink" href="#">TRYKKERI</a>
-  
+          <a class="navlink" href="#">TRYKKERI</a>
         </li>
-
- 
-
 
         <div class="icons">
-          
-         
-            <a href="checkout.html" class="navlink"><img src="assets/search.png" alt="search"></a>
-  
-     <ul>
-         <li class="cart-with-children">
-             <a href="checkout.html"><img src="assets/cart.png" alt="search"></a>
-             <ul class="sub-menu">
+          <a href="checkout.html" class="navlink"
+            ><img src="assets/search.png" alt="search"
+          /></a>
 
-                <li> <h3>Kurv Indhold</h3></li>
-                 <li>
-                     <a href="sweatpant-grey.html">Sweatpant Grey x 1</a>
-                     <p> Størrelse: M</p>
-                     <p>Farve: Gråmelert</p>
-                 </li>
-                 <li>
-                    <a href="sweatpant-grey.html">Sweatpant Grey x 1</a> 
-                    <p> Størrelse: M</p>
-                    <p>Farve: Gråmelert</p>
-                 </li>
-                 <li>
-                    <a href="sweatpant-grey.html">Sweatpant Grey x 1</a> 
-                    <p> Størrelse: M</p>
-                    <p>Farve: Gråmelert</p>
-                 </li>
-                 <li>
-                    <a href="sweatpant-grey.html">Sweatpant Grey x 1</a> 
-                    <p> Størrelse: M</p>
-                    <p>Farve: Gråmelert</p>
-                 </li>
+          <ul>
+            <li class="cart-with-children">
+              <a href="checkout.html"
+                ><img src="assets/cart.png" alt="search"
+              /></a>
+              <ul class="sub-menu">
+                <li><h3>Kurv Indhold</h3></li>
+                <li>
+                  <a href="sweatpant-grey.html">Sweatpant Grey x 1</a>
+                  <p>Størrelse: M</p>
+                  <p>Farve: Gråmelert</p>
+                </li>
+                <li>
+                  <a href="sweatpant-grey.html">Sweatpant Grey x 1</a>
+                  <p>Størrelse: M</p>
+                  <p>Farve: Gråmelert</p>
+                </li>
+                <li>
+                  <a href="sweatpant-grey.html">Sweatpant Grey x 1</a>
+                  <p>Størrelse: M</p>
+                  <p>Farve: Gråmelert</p>
+                </li>
+                <li>
+                  <a href="sweatpant-grey.html">Sweatpant Grey x 1</a>
+                  <p>Størrelse: M</p>
+                  <p>Farve: Gråmelert</p>
+                </li>
 
-                 <li class="go-to-checkout">
-                     <a href="checkout.html">
-                       <p>CHECKOUT</p>
-                     </a>
-                 </li>
+                <li class="go-to-checkout">
+                  <a href="checkout.html">
+                    <p>CHECKOUT</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
 
-        
-             </ul>
-         </li>
-     </ul>
-   
-            
-  
-      
-   
-            <a href="checkout.html" class="navlink"><img src="assets/profile.png" alt="search"></a>
-  
-      
-      </div>
+          <a href="checkout.html" class="navlink"
+            ><img src="assets/profile.png" alt="search"
+          /></a>
+        </div>
       </ul>
 
       <div class="hamburger">
-        <img src="assets/burger.png" alt="burger">
+        <img src="assets/burger.png" alt="burger" />
+      </div>
+    </nav>
+
+    <div class="product-list-overview">
+      <h2>Forside</h2>
+      <img src="assets/arrow.png" alt="arrow" />
+      <h3>Overdele</h3>
     </div>
 
-      </nav>
+    <div class="product-title">
+      <h1>Overdele</h1>
+      <img src="assets/smile.png" alt="smile" />
+    </div>
 
+    <div class="list-container">
+      <div class="product">
+        <div class="product-img">
+          <a href="sweatpant-grey.html">
+            <img
+              src="assets/black-sweater.png"
+              width="200"
+              alt="grey sweatpants"
+            />
+          </a>
+        </div>
 
-     
+        <div class="product-name">
+          <a href="sweatpant-grey.html"><p>Fruit of the Loom Sweatshirt</p> </a>
 
-
-      <div class="product-list-overview">
-
-        <h2>Forside</h2>
-        <img src="assets/arrow.png" alt="arrow">
-        <h3>Overdele</h3>
-
-        
+          <p class="price">135DKK</p>
+        </div>
       </div>
 
-      <div class="product-title">
-          <h1>Overdele</h1>
-          <img src="assets/smile.png" alt="smile">
+      <div class="product">
+        <div class="product-img">
+          <a href="sweatpant-grey.html">
+            <img
+              src="assets/sweater-shot.png"
+              width="200"
+              alt="grey sweatpants"
+            />
+            <div class="centered">Køb 2 for 250DKK</div>
+          </a>
+        </div>
+
+        <div class="product-name">
+          <p>Fruit of the Loom Sweatshirt</p>
+
+          <p class="price">135DKK</p>
+        </div>
       </div>
 
-      
-
-      <div class="list-container">
-
-        <div class="product">
-
-            <div class="product-img">
-            <a href="sweatpant-grey.html">
-                <img src="assets/black-sweater.png"  width="200" alt="grey sweatpants">
-            </a>
-
+      <div class="product">
+        <div class="product-img">
+          <a href="sweatpant-grey.html">
+            <img src="assets/fleece.png" width="200" alt="grey sweatpants" />
+          </a>
         </div>
 
         <div class="product-name">
+          <p>Fruit of the Loom Fleece Brun</p>
 
-            <a href="sweatpant-grey.html"><p>Fruit of the Loom Sweatshirt   </p> </a>
-
-            <p class="price">135DKK</p> 
-
+          <p class="price">200DKK</p>
         </div>
-
-        
-
-        </div>
-
-        <div class="product">
-
-            <div class="product-img">
-            <a href="sweatpant-grey.html">
-                <img src="assets/sweater-shot.png"  width="200" alt="grey sweatpants">
-                <div class="centered">Køb 2 for 250DKK</div>
-            </a>
-
-        </div>
-
-        <div class="product-name">
-
-            <p>Fruit of the Loom Sweatshirt  </p>
-
-            <p class="price">135DKK</p>
-
-        </div>
-
-        
-
-        </div>
-
-
-        <div class="product">
-
-            <div class="product-img">
-            <a href="sweatpant-grey.html">
-                <img src="assets/fleece.png"  width="200" alt="grey sweatpants">
-            </a>
-
-        </div>
-
-        <div class="product-name">
-
-            <p>Fruit of the Loom Fleece Brun  </p>
-
-            <p class="price">200DKK</p>
-
-        </div>
-
-        
-
-        </div>
-
-
-        <div class="product">
-
-            <div class="product-img">
-            <a href="sweatpant-grey.html">
-                <img src="assets/half-zip.png"  width="200" alt="grey sweatpants">
-            </a>
-
-        </div>
-
-        <div class="product-name">
-
-            <p>Fruit of the Loom Halfzip Sweat  </p>
-
-            <p class="price">175DKK</p>
-
-        </div>
-
-        
-
-        </div>
-
-
-        <div class="product">
-
-            <div class="product-img">
-            <a href="sweatpant-grey.html">
-                <img src="assets/organic-tshirt.png"  width="200" alt="grey sweatpants">
-            </a>
-
-        </div>
-
-        <div class="product-name">
-
-            <p>B&C Organic Tshirt Sage Grøn  </p>
-
-            <p class="price">75DKK</p>
-
-        </div>
-
-        
-
-        </div>
-
-
-        <div class="product">
-
-            <div class="product-img">
-            <a href="sweatpant-grey.html">
-                <img src="assets/grey-suit-coffe.png"  width="200" alt="grey sweatpants">
-            </a>
-
-        </div>
-
-        <div class="product-name">
-
-            <p>Fruit of the Loom Sweatshirt  </p>
-
-            <p class="price">135DKK</p>
-
-        </div>
-
-        
-
-        </div>
-
-
-        <div class="product">
-
-            <div class="product-img">
-            <a href="sweatpant-grey.html">
-                <img src="assets/zip-hoodie.png"  width="200" alt="grey sweatpants">
-            </a>
-
-        </div>
-
-        <div class="product-name">
-
-            <p>Fruit of the Loom Zip Hoodie  </p>
-
-            <p class="price">200DKK</p>
-
-        </div>
-
-        
-
-        </div>
-
-
-        <div class="product">
-
-            <div class="product-img">
-            <a href="sweatpant-grey.html">
-                <img src="assets/green-sweatsuit.png"  width="200" alt="grey sweatpants">
-            </a>
-
-        </div>
-
-        <div class="product-name">
-
-            <p> Jørnas Products Sweatshirt </p>
-
-            <p class="price">135DKK</p>
-
-        </div>
-
-        
-
-        </div>
-
-
-        <div class="product">
-
-            <div class="product-img">
-            <a href="sweatpant-grey.html">
-                <img src="assets/sweaterx2.png"  width="200" alt="grey sweatpants">
-            </a>
-
-        </div>
-
-        <div class="product-name">
-
-            <p>Fruit of the Loom Sweatshirt  </p>
-
-            <p class="price">135DKK</p>
-
-        </div>
-
-        
-
-        </div>
-
-
-        <div class="product">
-
-            <div class="product-img">
-            <a href="sweatpant-grey.html">
-                <img src="assets/grey-sweatsuit.png"  width="200" alt="grey sweatpants">
-            </a>
-
-        </div>
-
-        <div class="product-name">
-
-            <p>Fruit of the Loom Grå Hoodie  </p>
-
-            <p class="price">175DKK</p>
-
-        </div>
-
-        
-
-        </div>
-
-        <div class="product">
-
-            <div class="product-img">
-            <a href="sweatpant-grey.html">
-                <img src="assets/toj.jpeg"  width="200" alt="grey sweatpants">
-                <div class="centered">Køb 4 for 150DKK</div>
-            </a>
-
-        </div>
-
-        <div class="product-name">
-
-            <p>Fruit of the Loom T-Shirt Grå  </p>
-           
-
-            <p class="price">50DKK</p>
-
-        </div>
-
-        
-
-        </div>
-
-
-        <div class="product">
-
-            <div class="product-img">
-            <a href="sweatpant-grey.html">
-                <img src="assets/petrine-pants.png"  width="200" alt="grey sweatpants">
-            </a>
-
-        </div>
-
-        <div class="product-name">
-
-            <p>Fruit of the Loom Longsleeve  </p>
-
-            <p class="price">75DKK</p>
-
-        </div>
-
-        
-
-        </div>
-
-
       </div>
 
-   
+      <div class="product">
+        <div class="product-img">
+          <a href="sweatpant-grey.html">
+            <img src="assets/half-zip.png" width="200" alt="grey sweatpants" />
+          </a>
+        </div>
 
+        <div class="product-name">
+          <p>Fruit of the Loom Halfzip Sweat</p>
 
+          <p class="price">175DKK</p>
+        </div>
+      </div>
 
-  
+      <div class="product">
+        <div class="product-img">
+          <a href="sweatpant-grey.html">
+            <img
+              src="assets/organic-tshirt.png"
+              width="200"
+              alt="grey sweatpants"
+            />
+          </a>
+        </div>
 
+        <div class="product-name">
+          <p>B&C Organic Tshirt Sage Grøn</p>
 
+          <p class="price">75DKK</p>
+        </div>
+      </div>
 
-<footer>
-   <img src="assets/logo.png" alt="logo">
-<div class="footer-1">
-   <h2>Butik</h2>
-   <p>Østerbrogade 46<br>
-2100 København Ø, <br>
-+45 35267144 <br>
-jornas@jornas.dk</p>
-   </div>
+      <div class="product">
+        <div class="product-img">
+          <a href="sweatpant-grey.html">
+            <img
+              src="assets/grey-suit-coffe.png"
+              width="200"
+              alt="grey sweatpants"
+            />
+          </a>
+        </div>
 
-   <div class="footer-2">
-       <h2>Webshop</h2>
-       <p>+45 31513934 <br>
-    jornas@jornas-butik.dk<br>
-CVR: 41390867</p>
-   </div>
+        <div class="product-name">
+          <p>Fruit of the Loom Sweatshirt</p>
 
-   <div class="footer-3">
-       <h2>Information</h2>
-       <p>Retur <br>
-    Fragt <br>
-Trykkeri <br>
-Vilkår </p>
-   </div>
+          <p class="price">135DKK</p>
+        </div>
+      </div>
 
-   <div class="footer-4">
-       <h2>Følg os:</h2>
-       <div class="social-icons">
-           <img src="assets/instagram.png" alt="insta">
-           <img src="assets/facebook.png" alt="face">
-        
-       </div>
-   </div>
+      <div class="product">
+        <div class="product-img">
+          <a href="sweatpant-grey.html">
+            <img
+              src="assets/zip-hoodie.png"
+              width="200"
+              alt="grey sweatpants"
+            />
+          </a>
+        </div>
 
-</footer>
+        <div class="product-name">
+          <p>Fruit of the Loom Zip Hoodie</p>
 
+          <p class="price">200DKK</p>
+        </div>
+      </div>
 
+      <div class="product">
+        <div class="product-img">
+          <a href="sweatpant-grey.html">
+            <img
+              src="assets/green-sweatsuit.png"
+              width="200"
+              alt="grey sweatpants"
+            />
+          </a>
+        </div>
 
+        <div class="product-name">
+          <p>Jørnas Products Sweatshirt</p>
 
-    
+          <p class="price">135DKK</p>
+        </div>
+      </div>
 
+      <div class="product">
+        <div class="product-img">
+          <a href="sweatpant-grey.html">
+            <img src="assets/sweaterx2.png" width="200" alt="grey sweatpants" />
+          </a>
+        </div>
 
-  
+        <div class="product-name">
+          <p>Fruit of the Loom Sweatshirt</p>
 
+          <p class="price">135DKK</p>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-img">
+          <a href="sweatpant-grey.html">
+            <img
+              src="assets/grey-sweatsuit.png"
+              width="200"
+              alt="grey sweatpants"
+            />
+          </a>
+        </div>
+
+        <div class="product-name">
+          <p>Fruit of the Loom Grå Hoodie</p>
+
+          <p class="price">175DKK</p>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-img">
+          <a href="sweatpant-grey.html">
+            <img src="assets/toj.jpeg" width="200" alt="grey sweatpants" />
+            <div class="centered">Køb 4 for 150DKK</div>
+          </a>
+        </div>
+
+        <div class="product-name">
+          <p>Fruit of the Loom T-Shirt Grå</p>
+
+          <p class="price">50DKK</p>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-img">
+          <a href="sweatpant-grey.html">
+            <img
+              src="assets/petrine-pants.png"
+              width="200"
+              alt="grey sweatpants"
+            />
+          </a>
+        </div>
+
+        <div class="product-name">
+          <p>Fruit of the Loom Longsleeve</p>
+
+          <p class="price">75DKK</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <img src="assets/logo.png" alt="logo" />
+      <div class="footer-1">
+        <h2>Butik</h2>
+        <p>
+          Østerbrogade 46<br />
+          2100 København Ø, <br />
+          +45 35267144 <br />
+          jornas@jornas.dk
+        </p>
+      </div>
+
+      <div class="footer-2">
+        <h2>Webshop</h2>
+        <p>
+          +45 31513934 <br />
+          jornas@jornas-butik.dk<br />
+          CVR: 41390867
+        </p>
+      </div>
+
+      <div class="footer-3">
+        <h2>Information</h2>
+        <p>
+          Retur <br />
+          Fragt <br />
+          Trykkeri <br />
+          Vilkår
+        </p>
+      </div>
+
+      <div class="footer-4">
+        <h2>Følg os:</h2>
+        <div class="social-icons">
+          <img src="assets/instagram.png" alt="insta" />
+          <img src="assets/facebook.png" alt="face" />
+        </div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
