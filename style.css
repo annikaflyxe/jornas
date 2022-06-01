@@ -249,7 +249,7 @@ body {
 /*Buttons*/
 
 .CTA-button {
-  background-color: var(--CTA-button-background-color);
+  background-color: white;
   font-size: var(--text-font-size-button);
   padding-left: var(--padding-left-right-button);
   padding-right: var(--padding-left-right-button);
