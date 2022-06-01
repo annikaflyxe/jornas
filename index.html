@@ -8,6 +8,7 @@
   <meta name="description"
     content="Vi er en lille butik på Østerbro, der sælger behageligt basistøj, kasketter og andet tilbehør. Se vores udvalg her »" />
   <link rel="stylesheet" href="https://use.typekit.net/hfy3viz.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet" />
@@ -155,7 +156,12 @@
 
   <!-- section 2 starts -->
 
-  <section class="index-section-2">
+  <section class="index-section-2" data-aos="fade-up" data-aos-offset="200"
+  data-aos-delay="50"
+  data-aos-duration="1000"
+  data-aos-easing="ease-in-out"
+  data-aos-mirror="true"
+  data-aos-once="false">
     <div class="index-section-links-container">
       <img src="assets/Decorations-circle.png" alt="decoration" class="decoration-circle" />
       <a href="#" class="index-section-links">underdele</a>
@@ -172,7 +178,11 @@
 
   <!-- section 3 starts -->
 
-  <section class="popular-styles">
+  <section class="popular-styles" data-aos="fade-up" data-aos-offset="200"
+  data-aos-delay="30"
+  data-aos-easing="ease-in-out"
+  data-aos-mirror="true"
+  data-aos-once="false">
     <h2 class="h2-popular-styles">Populære Styles</h2>
     <div class="horizontal_slider">
       <div class="slider_container">
@@ -364,6 +374,11 @@
     </div>
 
   </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
   <script src="script.js"></script>
 </body>
