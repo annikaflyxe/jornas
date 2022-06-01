@@ -71,7 +71,7 @@
 
 <body>
   <nav class="navbar">
-    <a class="navlogo" href="index.html"><img src="assets/logo.png" alt="logo" /></a>
+    <a class="navlogo" href="index.html"><img src="assets/logo-white.png" alt="logo" /></a>
 
     <ul class="navmenu">
 
@@ -79,7 +79,8 @@
       <div class="navitem-1">
         <div class="dropdown-index">
 
-          <div class="navlink-1">SHOP</div>
+          <div class="navlink-1">
+            <a>SHOP</a></div>
 
           <div class="option">
             <div onclick="('Kategorier')"><b>Kategorier</b></div>
@@ -119,11 +120,11 @@
       </li>
 
       <div class="icons">
-        <a href="checkout.html" class="navlink"><img src="assets/search.png" alt="search" /></a>
+        <a href="checkout.html" class="navlink"><img src="assets/search-white.png" alt="search" /></a>
 
-        <a href="checkout.html" class="navlink"><img src="assets/cart.png" alt="search" /></a>
+        <a href="checkout.html" class="navlink"><img src="assets/cart-white.png" alt="search" /></a>
 
-        <a href="checkout.html" class="navlink"><img src="assets/profile.png" alt="search" /></a>
+        <a href="checkout.html" class="navlink"><img src="assets/profile-white.png" alt="search" /></a>
       </div>
     </ul>
 
@@ -134,7 +135,7 @@
 
   <section class="hero-section">
     <div class="img-container">
-      <img src="assets/heroimg-v2.png" class="hero-img" alt="hero-img" />
+      <img src="assets/hero-img1.png" class="hero-img" alt="hero-img" />
     </div>
     <div class="hero-text">
       <h1 class="h1-index">Sommerhilsen </h1>
@@ -156,22 +157,17 @@
 
   <!-- section 2 starts -->
 
-  <section class="index-section-2" data-aos="fade-up" data-aos-offset="200"
-  data-aos-delay="50"
-  data-aos-duration="1000"
-  data-aos-easing="ease-in-out"
-  data-aos-mirror="true"
-  data-aos-once="false">
-    <div class="index-section-links-container">
+  <section class="index-section-2"  >
+    <div class="index-section-links-container" data-aos="fade-up">
       <img src="assets/Decorations-circle.png" alt="decoration" class="decoration-circle" />
-      <a href="#" class="index-section-links">underdele</a>
-      <a href="#" class="index-section-links-filled">overdele</a>
-      <a href="#" class="index-section-links">accessories</a>
-      <a href="#" class="index-section-links-filled">jakker</a>
+      <a href="#" onmouseenter="changeImg('assets/graphic-element-1.png')" class="index-section-links">underdele</a>
+      <a href="#" onmouseenter="changeImg('assets/graphic-element-2.png')" class="index-section-links-filled">overdele</a>
+      <a href="#" onmouseenter="changeImg('assets/graphic-element-3.png')" class="index-section-links">accessories</a>
+      <a href="#" onmouseenter="changeImg('assets/graphic-element-4.png')" class="index-section-links-filled">jakker</a>
     </div>
 
-    <div>
-      <img src="assets/Decoration-wire-green.png" alt="decoration" class="decoration-wire" />
+    <div class="deco-imgarea" data-aos="fade-up">
+      <img src="assets/graphic-element-1.png" alt="decoration" id="decorationwire" />
     </div>
   </section>
   <!-- section 2 ends -->
@@ -179,7 +175,7 @@
   <!-- section 3 starts -->
 
   <section class="popular-styles" data-aos="fade-up" data-aos-offset="200"
-  data-aos-delay="30"
+  
   data-aos-easing="ease-in-out"
   data-aos-mirror="true"
   data-aos-once="false">
@@ -340,7 +336,7 @@
 
 
   <footer>
-    <img src="assets/logo.png" alt="logo">
+    <img src="assets/logo-white.png" alt="logo">
     <div class="footer-1">
       <h2>Butik</h2>
       <p>Østerbrogade 46<br>
@@ -378,6 +374,8 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+
+    
   </script>
 
   <script src="script.js"></script>
