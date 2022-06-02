@@ -584,6 +584,8 @@ li {
 .hamburger img {
   display: block;
   width: 45px;
+  -webkit-filter: invert(100%);
+    filter: invert(100%);
 }
 
 .navmenu {
@@ -1476,6 +1478,43 @@ li {
 .section-2-box {
   grid-area: section-2-box;
 }
+
+/*----------pop ups ------------*/
+
+.banner {
+  background-color: var(--color-beige);
+  border: 1px solid #482828;
+  border-radius: 10px;
+ 
+}
+
+.banner p {
+    color: #482828;
+    margin-right: 20px;
+}
+
+.banner__content {
+  padding: 16px;
+  max-width: 650px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  
+}
+
+.banner__text {
+
+  line-height: 1.4;
+ 
+}
+
+.banner__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  
+}
+
 /*----------------Footer----------------*/
 
 footer {
@@ -1559,9 +1598,7 @@ footer .footer-4 img {
 
 /*-------------Pop ups----------------*/
 
-.banner {
-  background: #ffab07;
-}
+
 
 .banner__content {
   padding: 16px;
@@ -1569,11 +1606,13 @@ footer .footer-4 img {
   margin: 0 auto;
   display: flex;
   align-items: center;
+  text-align: center;
+
 }
 
 .banner__text {
   flex-grow: 1;
-  line-height: 1.4;
+  line-height: 1;
 }
 
 .banner__close {
